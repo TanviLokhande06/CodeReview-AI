@@ -1,11 +1,10 @@
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 
 const genAI = new GoogleGenerativeAI(process.env.GOOGLE_GEMINI_KEY);
+
 const model = genAI.getGenerativeModel({
     model: "gemini-2.5-flash",
     systemInstruction: `
-                Here's a solid system instruction for your AI code reviewer:
-
                 AI System Instruction: Senior Code Reviewer (7+ Years of Experience)
 
                 Role & Responsibilities:
@@ -74,8 +73,6 @@ const model = genAI.getGenerativeModel({
                 Final Note:
 
                 Your mission is to ensure every piece of code follows high standards. Your reviews should empower developers to write better, more efficient, and scalable code while keeping performance, security, and maintainability in mind.
-
-                Would you like any adjustments based on your specific needs? 🚀 
     `
 });
 
