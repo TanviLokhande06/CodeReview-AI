@@ -140,10 +140,6 @@ function fetchData() {
 
 Contributions, issues, and feature requests are welcome.
 
-## 📄 License
-
-This project is licensed under the MIT License.
-
 ## 👨‍💻 Author
 
 Built with ❤️ using React, Node.js, Express, and Google Gemini AI.
